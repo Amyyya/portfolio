@@ -1,104 +1,101 @@
 <!DOCTYPE html>
-<html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Amy Lin" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      name="description"
-      content="這是Amy Lin的個人網站。Amy Lin是來自台灣的網頁開發人員。"
-    />
-    <title>我的履歷 | Amy 網頁前端工程師</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <!--header and navbar-->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">首頁</a></li>
-          <li><a class="active" href="#">我的履歷</a></li>
-          <li><a href="contact.html">聯絡方式</a></li>
-          <li><a href="./Taiwan Project/index.html">Taiwan Project</a></li>
-          <li><a href="./Hawaii Project/index.html">Hawaii Project</a></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Amy Lin" />
+    <meta name="robots" content="index, follow" /> 
+    <meta name="description" content="這是Amy Lin的個人網站，來自台灣的網頁開發者。"/>
+  <title>履歷 | Amy 網頁前端工程師</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="./index.html">Amy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./resume.html">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
 
-    <main>
-      <section class="table">
-        <table>
-          <tr style="border-top: 2px solid gray">
-            <td style="width: 20%">自我簡介</td>
-            <td style="width: 80%">
-              我畢業於元智大學資管系、中正大學資管所。興趣是網頁前端設計。能使用
-              HTML + CSS + JavaScript 編寫網頁。 
-            </td>
-          </tr>
-          <tr>
-            <td>學歷</td>
-            <td>元智大學 資訊管理學系學士
-              中正大學 資訊管理學所碩士
-            </td>
-          </tr>
-          <tr>
-            <td>經歷</td>
-            <td>
-              <ol>
-                <li>Google Developer Student Clubs社員</li>
-                <li>竹友會擔任文書</li>
-              </ol>
-            </td>
-          </tr>
-          <tr>
-            <td>語言</td>
-            <td>
-              <ul>
-                <li>中文: 精通</li>
-                <li>英文: 精通</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>專長</td>
-            <td>
-              <img src="./ICONS/icons8-html-5.svg" title="HTML5" alt="HTML5" />
-              <img src="./ICONS/icons8-css3.svg" title="CSS3" alt="CSS" />
-              <img
-                src="./ICONS/icons8-javascript.svg"
-                title="JavaScript"
-                alt="JavaScript"
-              />
-              <img
-                src="./ICONS/icons8-react-native.svg"
-                title="React"
-                alt="React"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>開發經驗</td>
-            <td>
-              我曾經開發過兩個網頁前端專案，分別是台灣經濟發展Project以及夏威夷租借服務網站Project。我負責從構想、用Figma畫出網頁架構、設計使用者介面UI/UX設計、用HTML做出基本網頁架構、CSS將網頁前端美化以及提升使用外觀。
-            </td>
-          </tr>
+<main class="container">
+    <div class="row">
+      <section id=resumeleft class="table col-md-6">
+        <table class="table table-bordered table-hover">
+          <tbody>
+            <tr>
+              <th style="width: 20%">自我簡介</th>
+              <td style="width: 80%">
+                我畢業於元智大學資管系、中正大學資管所。興趣是網頁前端設計。能使用
+                HTML + CSS + JavaScript 編寫網頁。 
+              </td>
+            </tr>
+            <!-- 加入 Bootstrap 表格樣式 -->
+            <tr>
+              <th>學歷</th>
+              <td>元智大學 資訊管理學系學士<br>中正大學 資訊管理學所碩士</td>
+            </tr>
+            <tr>
+              <th>經歷</th>
+              <td>
+                <ul>
+                  <li>Google Developer Student Clubs社員</li>
+                  <li>竹友會擔任文書</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>語言</th>
+              <td>
+                <ul>
+                  <li>中文: 精通</li>
+                  <li>英文: 精通</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>專長</th>
+              <td>
+                <img src="./ICONS/icons8-html-5.svg" title="HTML5" alt="HTML5" class="img-fluid">
+                <img src="./ICONS/icons8-css3.svg" title="CSS3" alt="CSS" class="img-fluid">
+                <img src="./ICONS/icons8-javascript.svg" title="JavaScript" alt="JavaScript" class="img-fluid">
+                <img src="./ICONS/icons8-react-native.svg" title="React" alt="React" class="img-fluid">
+              </td>
+            </tr>
+            <tr>
+              <th>開發經驗</th>
+              <td>
+                我曾經開發過一個動態網頁專案與三個靜態網頁專案，分別是線上課程系統與揪團平台、台灣經濟發展網頁以及夏威夷租借服務網站。我負責從構想、用Figma畫出網頁架構、設計使用者介面UI/UX設計、用HTML做出基本網頁架構、CSS將網頁前端美化以及提升使用外觀。
+              </td>
+            </tr>
+          </tbody>
         </table>
       </section>
-
-      <section class="picture">
-        <img
-          src="./Pictures/IMG_9315.jpg"
-          alt=""
-        />
-        <div class="orangeRect"></div>
+  
+      <section id=resume class="picture col-md-6">
+        <img src="./Pictures/IMG_9315.jpg" alt="" class="img-fluid my-picture2">
       </section>
-    </main>
-
-  </body>
+    </div>
+  </main>
+</body>
 </html>
